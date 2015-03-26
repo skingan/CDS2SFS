@@ -11,7 +11,7 @@ University of Rochester
 last update 26 March 2015
 	
 # Input: 
-one or more files containing multiple alignments of CDS in fasta format.
+Onne or more files containing multiple alignments of CDS in fasta format.
 
 # Formatting requirements for alignment:
 1. sequence must be coding (length is multiple of 3, no premature stop codons)
@@ -36,9 +36,11 @@ progress reports, alignment information, details about excluded sites
 # Example Calls:	
 
 SINGLE FILE:
+
 	CDS2SFS.pl mydata.fa > mydata_sfs.out 2> mydata_sfs.err
 
 ALL FILES IN DIRECTORY:
+
 	CDSS2SFS.pl > mydata_sfs.out 2> mydata_sfs.err
 
 
