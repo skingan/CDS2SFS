@@ -1,10 +1,13 @@
 # CDS2SFS
-Calculates site frequency spectra for synonymous and nonsynonymous sites in coding sequence alignment
+Calculates site frequency spectra of synonymous and nonsynonymous sites for coding alignment
 
 # Author:
 Sarah B. Kingan
+
 University of Rochester
+
 17 March 2014
+
 last update 26 March 2015
 	
 # Input: 
@@ -30,20 +33,22 @@ tab delimited text with the following fields (where N is the number of ingroup s
 2. STDERR
 progress reports, alignment information, details about excluded sites
 
-# Example Calls		
+# Example Calls:	
 
-EXAMPLE CALL ON SINGLE FILE: CDS2SFS.pl mydata.fa > mydata_sfs.out 2> mydata_sfs.err
+SINGLE FILE:
+	CDS2SFS.pl mydata.fa > mydata_sfs.out 2> mydata_sfs.err
 
-EXAMPLE CALL ON ALL FILES IN DIRECTORY: CDSS2SFS.pl > mydata_sfs.out 2> mydata_sfs.err
+ALL FILES IN DIRECTORY:
+	CDSS2SFS.pl > mydata_sfs.out 2> mydata_sfs.err
 
 
-# Exclusion of sites/handling of missing data
+# Exclusion of sites/handling of missing data:
 1. codons with any character other than AGCT in any sample are excluded in all samples
 2. codons with sites that have more than 2 states in the ingroup sequences are excluded (violation of infinite sites model)
 3. codons where ancestral state of the ingroup sequences cannot be inferred are ommited 
 4. codons where the ingroup has more than two states are excluded
 
-# Revision History
+# Revision History:
 
 21 April 2014, modified to print out per gene stats - Sarah B. Kingan
 
